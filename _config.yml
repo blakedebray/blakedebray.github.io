@@ -1,0 +1,28 @@
+title: Blake DeBray
+description: Program Manager, Coach, Human
+baseurl: ""
+url: ""
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git
+  - .DS_Store
+
+# Collections
+collections:
+  workshops:
+    output: true
+  presentations:
+    output: true
+  resources:
+    output: true 
