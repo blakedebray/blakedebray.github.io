@@ -37,7 +37,7 @@ This is a collection of resources that inspire me. I hope you find them useful.
 ## Training Programs
 
 * [Agile People](https://agilepeople.com/)
-* [Kansas Leadership Institute: Leadership Coach Intensive](https://kansasleadershipcenter.org/intensives/)
+* [Kansas Leadership Center: Leadership Coach Intensive](https://kansasleadershipcenter.org/intensives/)
 
 ## Mentors and Coaches
 
