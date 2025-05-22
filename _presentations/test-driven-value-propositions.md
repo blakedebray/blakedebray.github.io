@@ -5,5 +5,4 @@ In this talk, we will look at how we can use an experiment-driven approach to qu
 theme: "Program Management, Lean Startup, Agile"
 link: https://2015.leanagilekc.com/sessions/test-driven-value-propositions/
 order: 4
---- 
-
+---
