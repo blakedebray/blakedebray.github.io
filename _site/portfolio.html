@@ -4,37 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Blake DeBray</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="/assets/css/main.css">
 </head>
 <body>
-    <header class="header-content">
-        <h1><a href="/"><img src="/assets/images/blake-debray.jpeg" alt="Blake DeBray" class="profile-image">Blake DeBray</a></h1>
-        <div class="contact-links">
-            <a href="https://github.com/blakedebray" target="_blank" aria-label="GitHub Profile">
-                <img src="/assets/images/github.svg" alt="GitHub" class="social-icon">
-            </a>
-            <a href="https://www.linkedin.com/in/blakedebray/" target="_blank" aria-label="LinkedIn Profile">
-                <img src="/assets/images/linkedin.svg" alt="LinkedIn" class="social-icon">
-            </a>
+    <header class="bg-dark text-white py-2">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
+                <h1 class="h4 mb-0 text-nowrap">
+                    <a href="/" class="text-white text-decoration-none">
+                        <img src="/assets/images/blake-debray.jpeg" alt="Blake DeBray" class="rounded-circle me-2" style="width: 40px; height: 40px;">
+                        Blake DeBray
+                    </a>
+                </h1>
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-0 ms-4">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                    Services
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="/coaching">Coaching</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/portfolio">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/resources">Resources</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                    Contact
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    
+                                    
+                                    <li>
+                                        <a class="dropdown-item" href="/contacts/github.html" target="_blank">
+                                            <img src="/assets/images/github.svg" alt="GitHub" class="social-icon me-2">
+                                            GitHub
+                                        </a>
+                                    </li>
+                                    
+                                    <li>
+                                        <a class="dropdown-item" href="/contacts/linkedin.html" target="_blank">
+                                            <img src="/assets/images/linkedin.svg" alt="LinkedIn" class="social-icon me-2">
+                                            LinkedIn
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </div>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li class="dropdown">
-                <a href="#" class="dropdown-trigger">Services</a>
-                <div class="dropdown-content">
-                    <a href="/coaching">Coaching</a>
-                </div>
-            </li>
-            <li><a href="/portfolio">Portfolio</a></li>
-            <li><a href="/resources">Resources</a></li>
-            <li><a href="/contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <main>
+    <main class="container py-4">
         <h1 id="portfolio">Portfolio</h1>
 
 <p>Here are some workshops, presentations, and other tools I have created over the years that I would like to share.</p>
@@ -43,13 +81,38 @@
 <h2 id="workshops">Workshops</h2>
 
 <h3 id="team-canvas-expanded">Team Canvas Expanded</h3>
-<p>A workshop that helps teams understand their purpose, goals, and working agreements through an expanded version of the Team Canvas framework.</p>
+<p>A workshop that helps teams understand their purpose, goals, and working agreements through an expanded version of the <a href="https://theteamcanvas.com">Team Canvas</a> tool. This version adds personal canvases, giving each team member the opportunity to share their personal values, goals and needs that will influence the outcome of creating the team canvas.</p>
+
+<h3 id="team-reiss-motivation-profile">Team Reiss Motivation Profile</h3>
+<p>In this workshop, teams will gain understanding of the needs of each individual to know how to better support each other. Teams will create a group <a href="https://www.reissmotivationprofile.com">Reiss Motivation Profile</a> to:</p>
+<ul>
+  <li>help recognize how each member has unique motivators and needs</li>
+  <li>generate awareness of our biases and the stories we tell ourselves of others when they behave differently than us</li>
+  <li>discover effective ways to navigate conflicts that may arise from our differences</li>
+</ul>
 
 <p><br /></p>
 <h2 id="presentations">Presentations</h2>
 
-<h3 id="reframing-conflict"><a href="https://www.meetup.com/agile-kc/events/304365518/?eventOrigin=group_events_list">Reframing Conflict</a></h3>
-<p>The Superpower of Nonviolent Communication - A presentation on how to transform conflict into opportunities for growth and understanding.</p>
+<h3 id="reframing-conflict-the-superpower-of-nonviolent-communication"><a href="https://www.meetup.com/agile-kc/events/304365518/?eventOrigin=group_events_list">Reframing Conflict: The Superpower of Nonviolent Communication</a></h3>
+<p>Human interaction is complex and for many, the way we are taught to communicate with each other stems from systems that encourage confrontation, getting our way, or winning over others. This form of communication is prevalent in modern workplaces as well. But what if there were ways to communicate with compassion as the core tenant of our interactions? What if we could make our humanity, compassion, and empathy a central skill in how we show up with others? In this presentation, we will learn and practice Nonviolent Communication to shift how we approach situations of conflict to one of compassion, empathy, and a deeper understanding of others (and ourselves). These techniques can lead to better outcomes at home, in our communities, and with our coworkers.</p>
+
+<p><em>Coaching, Leadership Development, Conflict, Communication</em></p>
+
+<h3 id="coaching-as-leaders-presence">Coaching as Leaders: Presence</h3>
+<p>As humans, it is important to recognize the power and gift of being present with another and how it can impact our relationships, ability to lead, and develop trust and safety with others. As leaders, being present is essential. This presentation and practice explores how presence is a core leadership skill and recognize challenges that can get in the way with giving such a gift to others (and receive it in return).</p>
+
+<p><em>Coaching, Leadership Development, Communication</em></p>
+
+<h3 id="organizational-agility-is-a-journey"><a href="https://www.meetup.com/agile-kc/events/304365518/?eventOrigin=group_events_list">Organizational Agility is a Journey</a></h3>
+<p>Organizational agility is a journey, not a destination. Yet many of us have been part of organizations that have “completed” a transformation or installed a framework and stopped. Where many of us get stuck is losing sight of the “why”; and instead do the rituals in hope for the big result. In this discussion, Blake DeBray will share the story of Ad Astra’s exploration with agility, from their start in accidentally installing fake Agile to where they are today. We hope that sharing this story will help others and reconnect to why we are on this journey in the first place.</p>
+
+<p><em>Organizational Development, Lean, Agile, Metrics</em></p>
+
+<h3 id="test-driven-value-propositions-using-lean-startup-practices-to-define-better-customer-value"><a href="https://2015.leanagilekc.com/sessions/test-driven-value-propositions/">Test-Driven Value Propositions: Using Lean Startup Practices to Define Better Customer Value</a></h3>
+<p>There are a lot of tools and practices that help Agile teams deliver value, but how do we identify the right value in the first place? Product Owners have the difficult job of representing the customers and making assumptions of what they want. These assumptions end up in a backlog and incremental delivery helps us test them. But what if we could test our assumptions of what customers want even faster and cheaper, especially when we are not even sure if we should build it? /n In this talk, we will look at how we can use an experiment-driven approach to quickly and cheaply identify and test our assumptions on what is most important to customers.</p>
+
+<p><em>Program Management, Lean Startup, Agile</em></p>
 
 <p><br /></p>
 <h2 id="resources">Resources</h2>
@@ -57,13 +120,31 @@
 <h3 id="individual-development-plan"><a href="https://github.com/blakedebray/individual-development-plan">Individual Development Plan</a></h3>
 <p>An open source Individual Development Plan using GitHub Issues, Projects, and Actions to help track and manage personal growth.</p>
 
+<h3 id="jira-connect"><a href="https://github.com/blakedebray/jiraconnect">Jira Connect</a></h3>
+<p>A custom data export to use your Jira data for better understanding your Flow Metrics.</p>
+
 
     </main>
 
-    <footer>
-        <div class="footer-content">
-            <p>Created using GitHub Pages and <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> and is <a href="https://github.com/blakedebray/blakedebray.github.io" target="_blank">open source</a>.</p>
+    <footer class="bg-dark text-white py-3 mt-auto">
+        <div class="container text-center">
+            <div class="d-flex justify-content-center gap-3 mb-2">
+                
+                
+                <a href="/contacts/github.html" target="_blank" aria-label="GitHub Profile">
+                    <img src="/assets/images/github.svg" alt="GitHub" class="social-icon">
+                </a>
+                
+                <a href="/contacts/linkedin.html" target="_blank" aria-label="LinkedIn Profile">
+                    <img src="/assets/images/linkedin.svg" alt="LinkedIn" class="social-icon">
+                </a>
+                
+            </div>
+            <p class="mb-0">Created using GitHub Pages and <a href="https://jekyllrb.com/" target="_blank" class="text-white">Jekyll</a> and is <a href="https://github.com/blakedebray/blakedebray.github.io" target="_blank" class="text-white">open source</a>.</p>
         </div>
     </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html> 

@@ -25,4 +25,8 @@ collections:
   presentations:
     output: true
   resources:
-    output: true 
+    output: true
+  books:
+    output: true
+  contacts:
+    output: true

@@ -14,15 +14,17 @@ Here are some workshops, presentations, and other tools I have created over the 
 
 ### {% if workshop.link %}[{{ workshop.title }}]({{ workshop.link }}){% else %}{{ workshop.title }}{% endif %}
 {{ workshop.description }}
-{% if workshop.link %}[View Details]({{ workshop.link }}){% endif %}
 {% endfor %}
 
 <br>
 ## Presentations
 
-{% for presentation in site.presentations %}
+{% assign sorted_presentations = site.presentations | sort: 'order' %}
+{% for presentation in sorted_presentations %}
 ### {% if presentation.link %}[{{ presentation.title }}]({{ presentation.link }}){% else %}{{ presentation.title }}{% endif %}
 {{ presentation.description }}
+
+_{{ presentation.theme }}_
 {% endfor %}
 
 <br>

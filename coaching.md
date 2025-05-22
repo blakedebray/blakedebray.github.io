@@ -7,7 +7,6 @@ title: Coaching Services
 
 I offer professional coaching services focused on personal and professional development, leadership, and organizational transformation.
 
-<br>
 ## My Approach
 
 As a certified professional coach, I work with individuals and teams to:
@@ -20,20 +19,16 @@ As a certified professional coach, I work with individuals and teams to:
 - Working through difficult situations
 - Navigating conflict
 
-<br>
 ## Services Offered
 
 ### Individual Coaching
 One-on-one coaching sessions tailored to your specific goals and challenges.
 
-<br>
 ### Coaching Circles
 Coaching a cohort of professionals in a highly collaborative setting.
 
-<br>
 ### Team Coaching
 Coaching for existing teams to enhance team dynamics, communication, and performance.
 
-<br>
 ### Organizational Development
 Support for organizations undergoing transformation or seeking to improve their culture and processes.
