@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+</head>
+<body>
+    <header class="header-content">
+        <h1><a href="{{ '/' | relative_url }}"><img src="{{'/assets/images/blake-debray.jpeg' | relative_url}}" alt="Blake DeBray" class="profile-image">{{ site.title }}</a></h1>
+        <div class="contact-links">
+            <a href="https://github.com/blakedebray" target="_blank" aria-label="GitHub Profile">
+                <img src="{{ '/assets/images/github.svg' | relative_url }}" alt="GitHub" class="social-icon">
+            </a>
+            <a href="https://www.linkedin.com/in/blakedebray/" target="_blank" aria-label="LinkedIn Profile">
+                <img src="{{ '/assets/images/linkedin.svg' | relative_url }}" alt="LinkedIn" class="social-icon">
+            </a>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="{{ '/' | relative_url }}">Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-trigger">Services</a>
+                <div class="dropdown-content">
+                    <a href="{{ '/coaching' | relative_url }}">Coaching</a>
+                </div>
+            </li>
+            <li><a href="{{ '/portfolio' | relative_url }}">Portfolio</a></li>
+            <li><a href="{{ '/resources' | relative_url }}">Resources</a></li>
+            <li><a href="{{ '/contact' | relative_url }}">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        {{ content }}
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Created using GitHub Pages and <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> and is <a href="https://github.com/blakedebray/blakedebray.github.io" target="_blank">open source</a>.</p>
+        </div>
+    </footer>
+</body>
+</html> 
