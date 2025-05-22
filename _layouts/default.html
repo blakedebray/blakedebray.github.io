@@ -50,7 +50,7 @@
                                     {% assign sorted_contacts = site.contacts | sort: 'order' %}
                                     {% for contact in sorted_contacts %}
                                     <li>
-                                        <a class="dropdown-item" href="{{ contact.url }}" target="_blank">
+                                        <a class="dropdown-item" href="{{ contact.link }}" target="_blank">
                                             <img src="{{ '/assets/images/' | append: contact.icon | relative_url }}" alt="{{ contact.title }}" class="social-icon me-2">
                                             {{ contact.title }}
                                         </a>
@@ -74,7 +74,7 @@
             <div class="d-flex justify-content-center gap-3 mb-2">
                 {% assign sorted_contacts = site.contacts | sort: 'order' %}
                 {% for contact in sorted_contacts %}
-                <a href="{{ contact.url }}" target="_blank" aria-label="{{ contact.title }} Profile">
+                <a href="{{ contact.link }}" target="_blank" aria-label="{{ contact.title }} Profile">
                     <img src="{{ '/assets/images/' | append: contact.icon | relative_url }}" alt="{{ contact.title }}" class="social-icon">
                 </a>
                 {% endfor %}

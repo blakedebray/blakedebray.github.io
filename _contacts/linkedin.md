@@ -1,6 +1,6 @@
 ---
 title: LinkedIn
-url: https://www.linkedin.com/in/blakedebray/
+link: https://www.linkedin.com/in/blakedebray/
 icon: linkedin.svg
 order: 2
 ---
