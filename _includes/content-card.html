@@ -1,0 +1,37 @@
+{% assign item = include.item %}
+{% assign image_path = include.image_path | default: '/assets/images/' %}
+{% assign link_text = include.link_text | default: 'View Details' %}
+{% assign link_url = include.link_url | default: item.link %}
+{% assign image_exists = false %}
+{% if item.image %}
+    {% assign image_file = image_path | append: item.image %}
+    {% for file in site.static_files %}
+        {% if file.path == image_file %}
+            {% assign image_exists = true %}
+            {% break %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+
+<div class="col">
+    <div class="card h-100">
+        {% if image_exists %}
+        <img src="{{ image_path | append: item.image | relative_url }}" 
+             class="card-img-top" 
+             alt="{{ item.title }}"
+             style="height: 200px; object-fit: contain; padding: 1rem;">
+        {% endif %}
+        <div class="card-body">
+            <h5 class="card-title">{{ item.title }}</h5>
+            {% if item.author %}
+            <h6 class="card-subtitle mb-2 text-muted">{{ item.author }}</h6>
+            {% endif %}
+            {% if item.description %}
+            <p class="card-text">{{ item.description }}</p>
+            {% endif %}
+            {% if link_url %}
+            <a href="{{ link_url }}" class="card-link" target="_blank">{{ link_text }}</a>
+            {% endif %}
+        </div>
+    </div>
+</div> 
