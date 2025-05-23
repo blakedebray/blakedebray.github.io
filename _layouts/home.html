@@ -2,8 +2,20 @@
 layout: default
 ---
 
-<div class="home-background">
-    <div class="content-overlay">
-        {{ content }}
+<div class="row align-items-center">
+    <div class="col-md-4">
+        <div class="position-relative">
+            <img src="{{ '/assets/images/blake-debray.jpg' | relative_url }}" 
+                 alt="Blake DeBray" 
+                 class="img-fluid rounded-4"
+                 style="width: 100%; max-width: 500px;">
+        </div>
+
     </div>
-</div> 
+    <div class="col-md-8">
+        <div class="ps-md-4">
+            {{ content }}
+        </div>
+    </div>
+
+</div>
