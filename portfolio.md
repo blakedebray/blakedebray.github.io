@@ -10,27 +10,36 @@ Here are some workshops, presentations, and other tools I have created over the 
 <br>
 ## Workshops
 
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
 {% for workshop in site.workshops %}
-
-### {% if workshop.link %}[{{ workshop.title }}]({{ workshop.link }}){% else %}{{ workshop.title }}{% endif %}
-{{ workshop.description }}
+    {% include content-card.html 
+        item=workshop 
+        link_text="Session Details" 
+    %}
 {% endfor %}
+</div>
 
 <br>
 ## Presentations
 
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
 {% assign sorted_presentations = site.presentations | sort: 'order' %}
 {% for presentation in sorted_presentations %}
-### {% if presentation.link %}[{{ presentation.title }}]({{ presentation.link }}){% else %}{{ presentation.title }}{% endif %}
-{{ presentation.description }}
-
-_{{ presentation.theme }}_
+    {% include content-card.html 
+        item=presentation 
+        link_text="Session Details"
+    %}
 {% endfor %}
+</div>
 
 <br>
 ## Resources
 
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
 {% for resource in site.resources %}
-### {% if resource.link %}[{{ resource.title }}]({{ resource.link }}){% else %}{{ resource.title }}{% endif %}
-{{ resource.description }}
-{% endfor %} 
+    {% include content-card.html 
+        item=resource 
+        link_text="Learn More"
+    %}
+{% endfor %}
+</div>

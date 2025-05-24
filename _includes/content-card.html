@@ -14,24 +14,32 @@
 {% endif %}
 
 <div class="col">
-    <div class="card h-100">
+    <div class="card h-100 d-flex flex-column">
         {% if image_exists %}
         <img src="{{ image_path | append: item.image | relative_url }}" 
              class="card-img-top" 
              alt="{{ item.title }}"
              style="height: 200px; object-fit: contain; padding: 1rem;">
         {% endif %}
-        <div class="card-body">
+        <div class="card-body d-flex flex-column">
             <h5 class="card-title">{{ item.title }}</h5>
             {% if item.author %}
             <h6 class="card-subtitle mb-2 text-muted">{{ item.author }}</h6>
             {% endif %}
             {% if item.description %}
-            <p class="card-text">{{ item.description }}</p>
-            {% endif %}
-            {% if link_url %}
-            <a href="{{ link_url }}" class="card-link" target="_blank">{{ link_text }}</a>
+            <div class="card-text">
+                <p>{{ item.description | markdownify }}</p>
+            
+                {% if item.theme %}
+                <p class="text-muted italic">{{ item.theme }}</p>
+                {% endif %}
+            </div>
             {% endif %}
         </div>
+        {% if link_url %}
+        <div class="card-footer bg-transparent border-0 mt-auto">
+            <a href="{{ link_url }}" class="btn btn-primary w-100" target="_blank">{{ link_text }}</a>
+        </div>
+        {% endif %}
     </div>
 </div> 
