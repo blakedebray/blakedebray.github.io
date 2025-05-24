@@ -10,7 +10,8 @@ This is a collection of resources that inspire me. I hope you find them useful.
 ## Books
 
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-{% for book in site.books %}
+{% assign sorted_books = site.books | sort: 'order' %}
+{% for book in sorted_books %}
     {% include content-card.html 
         item=book 
         link_text="View on Goodreads" 

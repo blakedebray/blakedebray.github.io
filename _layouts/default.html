@@ -4,63 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }} - {{ site.title }}</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="{{ '/assets/images/logo.svg' | relative_url }}">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 </head>
 <body>
-    <header class="bg-dark text-white py-2">
+    <header class="py-2">
         <div class="container">
-            <div class="d-flex justify-content-between align-items-center">
-                <h1 class="h4 mb-0 text-nowrap">
-                    <a href="{{ '/' | relative_url }}" class="text-white text-decoration-none">
-                        {{ site.title }}
-                    </a>
-                </h1>
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-0 ms-4">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ '/' | relative_url }}">Home</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                                    Services
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-dark">
-                                    <li><a class="dropdown-item" href="{{ '/coaching' | relative_url }}">Coaching</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ '/portfolio' | relative_url }}">Portfolio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ '/resources' | relative_url }}">Resources</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                                    Contact
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-dark">
-                                    {% assign sorted_contacts = site.contacts | sort: 'order' %}
-                                    {% for contact in sorted_contacts %}
-                                    <li>
-                                        <a class="dropdown-item" href="{{ contact.link }}" target="_blank">
-                                            <img src="{{ '/assets/images/' | append: contact.icon | relative_url }}" alt="{{ contact.title }}" class="social-icon me-2">
-                                            {{ contact.title }}
-                                        </a>
-                                    </li>
-                                    {% endfor %}
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
+            <nav class="navbar navbar-expand-lg p-0 w-auto">
+                <a class="navbar-brand d-flex align-items-center" href="#">{{ site.title }}</a>
+                <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse position-absolute position-md-static top-100 start-0 bg-white" id="navbarNav">
+                    <ul class="navbar-nav w-100 justify-content-end">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ '/' | relative_url }}">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="{{ '/coaching' | relative_url }}">Coaching</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ '/portfolio' | relative_url }}">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ '/resources' | relative_url }}">Resources</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Contact
+                            </a>
+                            <ul class="dropdown-menu">
+                                {% assign sorted_contacts = site.contacts | sort: 'order' %}
+                                {% for contact in sorted_contacts %}
+                                <li>
+                                    <a class="dropdown-item" href="{{ contact.link }}" target="_blank">
+                                        <img src="{{ '/assets/images/icons/' | append: contact.icon-dark | relative_url }}" alt="{{ contact.title }}" class="social-icon me-2">
+                                        {{ contact.title }}
+                                    </a>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
     </header>
 
@@ -74,7 +70,7 @@
                 {% assign sorted_contacts = site.contacts | sort: 'order' %}
                 {% for contact in sorted_contacts %}
                 <a href="{{ contact.link }}" target="_blank" aria-label="{{ contact.title }} Profile">
-                    <img src="{{ '/assets/images/' | append: contact.icon | relative_url }}" alt="{{ contact.title }}" class="social-icon">
+                    <img src="{{ '/assets/images/icons/' | append: contact.icon | relative_url }}" alt="{{ contact.title }}" class="social-icon">
                 </a>
                 {% endfor %}
             </div>

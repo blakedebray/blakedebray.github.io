@@ -1,7 +1,9 @@
+# Site settings
 title: Blake DeBray
 description: Program Manager, Coach, Human
 baseurl: ""
 url: ""
+logo: /assets/images/logo.svg
 
 # Build settings
 markdown: kramdown
