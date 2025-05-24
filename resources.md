@@ -25,7 +25,7 @@ This is a collection of resources that inspire me. I hope you find them useful.
 {% for training in site.data.training %}
     {% include content-card.html 
         item=training 
-        link_text="View Profile" 
+        link_text="Visit Website" 
     %}
 {% endfor %}
 </div>
@@ -36,7 +36,7 @@ This is a collection of resources that inspire me. I hope you find them useful.
 {% for mentor in site.data.mentors %}
     {% include content-card.html 
         item=mentor 
-        link_text="View Profile" 
+        link_text="Visit Website" 
     %}
 {% endfor %}
 </div>
