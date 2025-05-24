@@ -3,5 +3,6 @@ title: "The Fearless Organization: Creating Psychological Safety in the Workplac
 author: Amy C. Edmondson
 description:
 link: https://www.goodreads.com/book/show/40275161-the-fearless-organization
-image: the-fearless-organization.jpg
+image: resources/the-fearless-organization.jpg
+order: 4
 ---

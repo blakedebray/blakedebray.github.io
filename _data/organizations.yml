@@ -1,14 +1,14 @@
 - title: "Reiss Motivation Profile"
   description: "Scientific assessment tool for understanding personal motivation"
   link: "https://www.reissmotivationprofile.com/"
-  image: "reiss.jpg"
+  image: "resources/rmp.jpg"
 
 - title: "International Coaching Federation"
   description: "Global organization dedicated to advancing the coaching profession"
   link: "https://coachingfederation.org/"
-  image: "icf.jpg"
+  image: "resources/icf.jpg"
 
 - title: "Center for Nonviolent Communication"
   description: "Global organization promoting compassionate communication"
   link: "https://cnvc.org/"
-  image: "cnvc.jpg" 
+  image: "resources/cnvc.jpg" 
