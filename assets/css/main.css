@@ -4,8 +4,8 @@
     --text-color: #333;
     --text-color-light: #ffffff;
     --background-color: #f8f9fa;
-    --link-color: #0d6efd;
-    --link-hover-color: #0a58ca;
+    --link-color: #0066cc;
+    --link-hover-color: #004080;
 }
 
 * {
@@ -147,6 +147,15 @@ footer {
     header .navbar-collapse {
         position: static !important;
     }
+}
+
+.card-link {
+    color: var(--link-color) !important;
+}
+
+.card-link:hover {
+    color: var(--link-hover-color) !important;
+    text-decoration: underline;
 }
 
 nav a {
