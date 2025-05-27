@@ -192,6 +192,7 @@ nav a:hover {
 
 .large-image {
     max-width: 800px;
+    max-width: 100%;
     border-radius: 15px;
     display: block;
     margin-left: auto;
