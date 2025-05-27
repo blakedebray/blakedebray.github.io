@@ -17,7 +17,7 @@
             <nav class="navbar navbar-expand-lg p-0 w-auto">
                 <a class="navbar-brand d-flex align-items-center" href="{{ '/' | relative_url }}">
                     <img src="{{ '/assets/images/logo-dark.svg' | relative_url }}" alt="{{ site.title }} Logo" class="me-2" style="height: 40px;">
-                    <h3>{{ site.title }}</h3>
+                    <h3 class="my-0 align-self-center">{{ site.title }}</h3>
                 </a>
                 <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -35,26 +35,23 @@
                                 <li><a class="dropdown-item" href="{{ '/coaching' | relative_url }}">Coaching</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ '/portfolio' | relative_url }}">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ '/resources' | relative_url }}">Resources</a>
-                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                                Contact
+                                About
                             </a>
                             <ul class="dropdown-menu">
-                                {% assign sorted_contacts = site.contacts | sort: 'order' %}
-                                {% for contact in sorted_contacts %}
                                 <li>
-                                    <a class="dropdown-item" href="{{ contact.link }}" target="_blank">
-                                        <img src="{{ '/assets/images/icons/' | append: contact.icon-dark | relative_url }}" alt="{{ contact.title }}" class="social-icon me-2">
-                                        {{ contact.title }}
-                                    </a>
+                                    <a class="dropdown-item" href="{{ '/about' | relative_url }}">About Me</a>
                                 </li>
-                                {% endfor %}
+                                <li class="nav-item">
+                                    <a class="dropdown-item" href="{{ '/portfolio' | relative_url }}">Portfolio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="dropdown-item" href="{{ '/resources' | relative_url }}">Resources</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="{{ '/contact' | relative_url }}">Contact Me</a>
+                                </li>
                             </ul>
                         </li>
                     </ul>
