@@ -110,13 +110,15 @@ footer {
     opacity: 0.9;
 }
 
-.profile-image {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
+.certification-image {
+    width: 80px;
+    height: 80px;
     object-fit: cover;
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    transition: border-color 0.2s ease;
+}
+
+.certification-image:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
 }
 
 .footer-content {
@@ -174,4 +176,47 @@ nav a:hover {
 .dropdown-item:hover {
     color: var(--link-hover-color) !important;
     background-color: rgba(0,0,0,0.05);
+}
+
+.small-image {
+    max-width: 300px;
+    border-radius: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+.large-image {
+    max-width: 800px;
+    border-radius: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    object-fit: cover;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+}
+
+.contact-link:hover {
+    color: var(--link-color);
+    transform: scale(1.05);
+}
+
+.contact-link .social-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 0.5rem;
 }

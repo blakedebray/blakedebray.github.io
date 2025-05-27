@@ -10,7 +10,7 @@ Here are some workshops, presentations, and other tools I have created over the 
 <br>
 ## Workshops
 
-<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
 {% for workshop in site.workshops %}
     {% include content-card.html 
         item=workshop 
@@ -22,7 +22,7 @@ Here are some workshops, presentations, and other tools I have created over the 
 <br>
 ## Presentations
 
-<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
 {% assign sorted_presentations = site.presentations | sort: 'order' %}
 {% for presentation in sorted_presentations %}
     {% include content-card.html 
@@ -35,7 +35,7 @@ Here are some workshops, presentations, and other tools I have created over the 
 <br>
 ## Resources
 
-<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
 {% for resource in site.resources %}
     {% include content-card.html 
         item=resource 
