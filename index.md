@@ -5,7 +5,7 @@ title: Home
 
 ### Hello! I'm Blake DeBray! 
 
-##### I care about organizational and team culture, leadership development, and cultivating the amazing potential for growth and impact within each of us.
+I care about organizational and team culture, leadership development, and cultivating the amazing potential for growth and impact within each of us.
 
 ### My Mission
 

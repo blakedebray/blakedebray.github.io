@@ -33,3 +33,5 @@ collections:
     output: true
   contacts:
     output: true
+  services:
+    output: true
