@@ -3,6 +3,7 @@ title: "Individual Coaching"
 description: "Personalized 1:1 coaching to work towards your personal or professional goals."
 order: 1
 link: "/services/individual-coaching"
+image: campfire.jpg
 layout: default
 
 ---

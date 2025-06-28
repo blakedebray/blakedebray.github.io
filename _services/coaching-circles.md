@@ -1,8 +1,10 @@
 ---
 title: "Coaching Circles"
 description: "Cohorts of professionals working towards similar goals, facilitated and supported by a coach."
-link: "/services/coaching-circles"
 order: 2
+link: "/services/coaching-circles"
+image: campfire.jpg
+layout: default
 ---
 
 # Coaching Circles

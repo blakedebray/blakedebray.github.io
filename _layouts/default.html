@@ -27,13 +27,8 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ '/' | relative_url }}">Home</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                                Services
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="{{ '/coaching' | relative_url }}">Coaching</a></li>
-                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ '/services' | relative_url }}">Services</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
@@ -80,5 +75,8 @@
 
     <!-- Bootstrap JS Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="{{ '/assets/js/scroll-animations.js' | relative_url }}"></script>
 </body>
 </html> 
