@@ -1,15 +1,15 @@
 {% assign image_path = include.image_path | default: '/assets/images/' %}
 
 <div class="service-module mb-5">
-    <div class="row g-0 {% if forloop.index0 | modulo: 2 == 0 %}flex-row-reverse{% endif %}">
-        <div class="col-md-9 p-4 p-md-5 d-flex flex-column justify-content-center">
-            <div class="mb-4">{{ include.service.description | markdownify }}</div>
-            <a href="{{ include.service.url }}" class="btn btn-outline-primary align-self-start">Learn more</a>
-        </div>
+    <div class="row g-0">
         <div class="col-md-3 service-title-section">
             <div class="service-title-content">
                 <h3 class="service-title">{{ include.service.title }}</h3>
             </div>
+        </div>
+        <div class="col-md-9 p-4 p-md-5">
+            <div class="mb-4">{{ include.service.description | markdownify }}</div>
+            <a href="{{ include.service.url }}" class="btn btn-outline-primary align-self-start">Learn more</a>
         </div>
     </div>
 </div>

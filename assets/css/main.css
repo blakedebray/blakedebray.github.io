@@ -233,29 +233,12 @@ nav a:hover {
     animation: fadeInUp 0.8s ease-out forwards;
 }
 
-.service-module img {
-    min-height: 300px;
-}
-
-.service-module-img {
-    max-height: 200px; /* matches min-height of .service-module img */
-    max-width: 100%;
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    display: block;
-    margin-left: 0;
-    margin-right: 0;
-    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 20%, black 100%);
-    mask-image: linear-gradient(to right, transparent 0%, black 20%, black 100%);
-}
-
 .service-title-section {
-    background: linear-gradient(to right, #333 0%, #333 60%, #444 70%, #555 80%, #777 90%, #999 95%, #fff 100%);
+    background: #333;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 300px;
+    min-height: 150px;
 }
 
 .service-title-content {
@@ -297,4 +280,11 @@ nav a:hover {
 
 .service-module:nth-child(4).animate {
     animation-delay: 0.8s;
+}
+
+@media (min-width: 768px) {
+    .service-title-section {
+        background: linear-gradient(to right, #333 0%, #333 60%, #444 70%, #555 80%, #777 90%, #999 95%, #fff 100%);
+        min-height: 300px;
+    }
 }
