@@ -2,18 +2,26 @@
 layout: default
 ---
 
-<div class="row align-items-center">
+<section class="hero-section">
     <div class="position-relative">
-        <img src="{{ '/assets/images/background.jpg' | relative_url }}" alt="Your career journey is an open road" class="img-fluid large-image">
+        <img src="{{ '/assets/images/background.jpg' | relative_url }}" 
+             alt="A winding road through an open landscape representing the journey of personal and professional growth" 
+             class="img-fluid large-image">
         <div class="position-absolute top-50 start-50 translate-middle text-center">
-            <h2 class="text-white">“The journey of a thousand miles begins with one step.”</h2>
-            <h4 class="text-white">- Lao Tzu</h4>
+            <h2 class="text-white">"The journey of a thousand miles begins with one step."</h2>
+            <p class="text-white h4 mb-0" aria-label="Quote attribution">- Lao Tzu</p>
         </div>
     </div>
-</div>
-<div class="row align-items-center">
-        {{ content }}
-</div>
-<div class="row mt-5 pt-5 text-center">
-    <a href="{{ '/contact' | relative_url }}" target="_blank" class="btn btn-primary">Connect with me to get started!</a>
-</div>
+</section>
+
+<section class="services-content">
+    {{ content }}
+</section>
+
+<section class="cta-section text-center mt-5 pt-5">
+    <a href="{{ '/contact' | relative_url }}" 
+       class="btn btn-primary btn-lg"
+       aria-label="Contact Blake DeBray to get started with coaching or consulting services">
+       Connect with me to get started!
+    </a>
+</section>

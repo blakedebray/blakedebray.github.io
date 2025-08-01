@@ -1,16 +1,32 @@
 # Site settings
 title: Blake DeBray
-description: Program Manager, Coach, Human
+description: Program Manager, Coach, Human - Professional coaching and consulting services to help individuals, teams, and organizations thrive.
 baseurl: ""
 url: ""
 logo: /assets/images/logo.svg
 
+# SEO settings
+author: Blake DeBray
+twitter:
+  username: blakedebray
+  card: summary
+social:
+  name: Blake DeBray
+  links:
+    - https://github.com/blakedebray
+    - https://www.linkedin.com/in/blakedebray/
+
 # Build settings
 markdown: kramdown
+highlighter: rouge
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jemoji
+
+# Performance optimizations
+sass:
+  style: compressed
 
 # Exclude from processing
 exclude:
@@ -20,6 +36,8 @@ exclude:
   - vendor
   - .git
   - .DS_Store
+  - README.md
+  - .gitignore
 
 # Collections
 collections:
@@ -29,3 +47,16 @@ collections:
     output: true
   services:
     output: true
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "services"
+    values:
+      layout: "default"

@@ -6,12 +6,66 @@
     --background-color: #f8f9fa;
     --link-color: #0066cc;
     --link-hover-color: #004080;
+    --focus-color: #0066cc;
+    --focus-outline: 2px solid var(--focus-color);
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* Skip navigation link for accessibility */
+.visually-hidden-focusable {
+    position: absolute;
+    top: -40px;
+    left: 6px;
+    width: 1px;
+    height: 1px;
+    padding: 8px 16px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+    background: var(--link-color);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    z-index: 1000;
+}
+
+.visually-hidden-focusable:focus {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: auto;
+    height: auto;
+    padding: 8px 16px;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+}
+
+/* Improved focus indicators */
+a:focus,
+button:focus,
+.btn:focus,
+.nav-link:focus,
+.dropdown-toggle:focus,
+.dropdown-item:focus {
+    outline: var(--focus-outline);
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+/* Ensure focus is visible even with custom styles */
+.service-cta:focus {
+    outline: var(--focus-outline);
+    outline-offset: 2px;
 }
 
 html, body {
@@ -387,5 +441,32 @@ nav a:hover {
 @media (min-width: 992px) {
     .service-title {
         font-size: 1.6rem;
+    }
+}
+
+/* Respect user motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    .service-module {
+        animation: none !important;
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+    }
+    
+    .service-cta::after {
+        transition: none !important;
+    }
+    
+    .service-cta:hover::after {
+        transform: none !important;
+    }
+    
+    .service-module:hover {
+        transform: none !important;
+    }
+    
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
     }
 }
