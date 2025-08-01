@@ -62,7 +62,7 @@
     <footer class="bg-dark text-white py-3 mt-auto">
         <div class="container text-center">
             <div class="d-flex justify-content-center gap-3 mb-2">
-                {% assign sorted_contacts = site.contacts | sort: 'order' %}
+                {% assign sorted_contacts = site.data.contacts | sort: 'order' %}
                 {% for contact in sorted_contacts %}
                 <a href="{{ contact.link }}" target="_blank" aria-label="{{ contact.title }} Profile">
                     <img src="{{ '/assets/images/icons/' | append: contact.icon | relative_url }}" alt="{{ contact.title }}" class="social-icon">

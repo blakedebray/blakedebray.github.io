@@ -23,7 +23,7 @@ Here are some workshops, presentations, and other tools I have created over the 
 ## Presentations
 
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
-{% assign sorted_presentations = site.presentations | sort: 'order' %}
+{% assign sorted_presentations = site.data.presentations | sort: 'order' %}
 {% for presentation in sorted_presentations %}
     {% include content-card.html 
         item=presentation 
@@ -36,7 +36,7 @@ Here are some workshops, presentations, and other tools I have created over the 
 ## Resources
 
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
-{% for resource in site.resources %}
+{% for resource in site.data.resources %}
     {% include content-card.html 
         item=resource 
         link_text="Learn More"

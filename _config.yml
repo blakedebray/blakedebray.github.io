@@ -25,13 +25,7 @@ exclude:
 collections:
   workshops:
     output: true
-  presentations:
-    output: true
-  resources:
-    output: true
   books:
-    output: true
-  contacts:
     output: true
   services:
     output: true

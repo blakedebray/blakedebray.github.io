@@ -10,7 +10,7 @@ I'm always open to conversations, collaboration opportunities, and exploring way
 Feel free to connect with me through the following:
 
 <div class="d-flex justify-content-center align-items-center flex-wrap">
-    {% assign sorted_contacts = site.contacts | sort: 'order' %}
+    {% assign sorted_contacts = site.data.contacts | sort: 'order' %}
     {% for contact in sorted_contacts %}
     <a href="{{ contact.link }}" target="_blank" class="mx-3 my-2 text-center contact-link">
         <img src="{{ '/assets/images/icons/' | append: contact.icon-dark | relative_url }}" alt="{{ contact.title }}" class="social-icon mb-2">
