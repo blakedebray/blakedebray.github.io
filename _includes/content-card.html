@@ -37,7 +37,7 @@
             </div>
             {% endif %}
         </div>
-        {% if link_url %}
+        {% if link_url and link_url != blank %}
         <div class="card-footer bg-transparent border-0 mt-auto">
             <a href="{{ link_url }}" 
                class="btn btn-primary w-100" 
