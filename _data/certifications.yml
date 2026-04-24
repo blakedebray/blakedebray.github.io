@@ -4,7 +4,7 @@
 
 - title: "ICAgile Certified Professional - Leadership"
   link: "https://www.icagile.com/certification/leading-with-agility"
-  image: "certifications/icp-lea.jpg" 
+  image: "certifications/icp-lea.jpg"
 
 - title: "ICAgile Certified Professional - Agile HR"
   link: "https://www.icagile.com/certification/agility-in-hr"
@@ -14,10 +14,10 @@
   link: "https://www.icagile.com/certification/business-agility-foundations"
   image: "certifications/icp-baf.jpg"
 
-  - title: "Certified Scrum Professional - ScrumMaster - Scrum Alliance"
+- title: "Certified Scrum Professional - ScrumMaster - Scrum Alliance"
   link: "https://www.scrumalliance.org/get-certified/scrum-master-track/certified-scrum-professional-scrummaster"
   image: "certifications/sa-csp_sm.jpg"
 
-  - title: "Certified Scrum Master - Scrum Alliance"
+- title: "Certified Scrum Master - Scrum Alliance"
   link: "https://www.scrumalliance.org/get-certified/scrum-master-track/certified-scrummaster"
   image: "certifications/sa-csm.jpg"

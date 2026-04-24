@@ -1,0 +1,11 @@
+- title: GitHub
+  link: https://github.com/blakedebray
+  icon: github.svg
+  icon-dark: github-dark.svg
+  order: 1
+
+- title: LinkedIn
+  link: https://www.linkedin.com/in/blakedebray/
+  icon: linkedin.svg
+  icon-dark: linkedin-dark.svg
+  order: 2

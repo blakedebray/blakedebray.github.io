@@ -14,12 +14,13 @@
 {% endif %}
 
 <div class="col">
-    <div class="card h-100 d-flex flex-column">
+    <article class="card h-100 d-flex flex-column" role="article">
         {% if image_exists %}
         <img src="{{ image_path | append: item.image | relative_url }}" 
              class="card-img-top" 
-             alt="{{ item.title }}"
-             style="height: 200px; object-fit: contain; padding: 1rem;">
+             alt="{% if item.image_alt %}{{ item.image_alt }}{% else %}Image for {{ item.title }}{% endif %}"
+             style="height: 200px; object-fit: contain; padding: 1rem;"
+             loading="lazy">
         {% endif %}
         <div class="card-body d-flex flex-column">
             <h5 class="card-title">{{ item.title }}</h5>
@@ -31,15 +32,19 @@
                 <p>{{ item.description | markdownify }}</p>
             
                 {% if item.theme %}
-                <p class="text-muted italic">{{ item.theme }}</p>
+                <p class="text-muted italic" aria-label="Theme: {{ item.theme }}">{{ item.theme }}</p>
                 {% endif %}
             </div>
             {% endif %}
         </div>
-        {% if link_url %}
+        {% if link_url and link_url != blank %}
         <div class="card-footer bg-transparent border-0 mt-auto">
-            <a href="{{ link_url }}" class="btn btn-primary w-100" target="_blank">{{ link_text }}</a>
+            <a href="{{ link_url }}" 
+               class="btn btn-primary w-100" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               aria-label="{{ link_text }} for {{ item.title }} (opens in new tab)">{{ link_text }}</a>
         </div>
         {% endif %}
-    </div>
+    </article>
 </div> 
