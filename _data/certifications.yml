@@ -13,3 +13,11 @@
 - title: "ICAgile Certified Professional - Business Agility Foundations"
   link: "https://www.icagile.com/certification/business-agility-foundations"
   image: "certifications/icp-baf.jpg"
+
+  - title: "Certified Scrum Professional - ScrumMaster - Scrum Alliance"
+  link: "https://www.scrumalliance.org/get-certified/scrum-master-track/certified-scrum-professional-scrummaster"
+  image: "certifications/sa-csp_sm.png"
+
+  - title: "Certified Scrum Master - Scrum Alliance"
+  link: "https://www.scrumalliance.org/get-certified/scrum-master-track/certified-scrummaster"
+  image: "certifications/sa-csm.png"
