@@ -19,7 +19,7 @@ Throughout my career, I have had the pleasure of being in many types of roles:
 
 What I have learned most from my career journey is the importance in collaboration, active listening, clear and open communication, and focusing on outcomes that lead to real impact on individuals, teams, and organizations. All of which are possible through continous learning and growth and ultimately making the world a better place for all.
 
-<div class="d-flex justify-content-center align-items-center">
+<div class="d-flex justify-content-center align-items-center certifications-container">
     {% for cert in site.data.certifications %}
         <a href="{{ cert.link }}" class="mx-2">
             <img src="{{ '/assets/images/' | append: cert.image | relative_url }}" alt="{{ cert.title }}" class="certification-image">
